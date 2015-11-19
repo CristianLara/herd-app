@@ -10,24 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: Properties
     
-    @IBAction func moveAround(sender: UIPanGestureRecognizer) {
-        
-    }
-    @IBAction func Event1(sender: UIButton) {
-    }
+    @IBOutlet weak var event1: UIButton!
+    @IBOutlet weak var event2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("HERDDDD")
-
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // MARK: Actions
+    
+    @IBAction func pan(sender: UIPanGestureRecognizer) {
     }
 
 
