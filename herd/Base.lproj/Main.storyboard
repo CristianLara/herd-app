@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -51,15 +51,43 @@
                                 <color key="barTintColor" red="0.22352941179999999" green="0.85098039219999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="clip" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-Oh-kVE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-JM-L66">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uS9-Z7-mMg">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <animations/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Mfr-iJ-ZzF"/>
+                                            <constraint firstAttribute="width" constant="150" id="XZs-x5-fyX"/>
+                                        </constraints>
                                         <state key="normal" title="Phi Psi Volcano Party"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="177" y="178" width="78" height="53"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="75"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Mfr-iJ-ZzF"/>
+                                                <exclude reference="XZs-x5-fyX"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="125" y="149" width="150" height="150"/>
+                                            <mask key="constraints">
+                                                <include reference="Mfr-iJ-ZzF"/>
+                                                <include reference="XZs-x5-fyX"/>
+                                            </mask>
                                         </variation>
                                         <connections>
                                             <action selector="Event1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jm6-h3-Um3"/>
@@ -72,6 +100,10 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="X9z-M8-lbu"/>
+                                    <constraint firstAttribute="bottom" secondItem="uS9-Z7-mMg" secondAttribute="bottom" constant="149" id="aXl-li-PTr">
+                                        <variation key="widthClass=compact" constant="34"/>
+                                    </constraint>
+                                    <constraint firstItem="uS9-Z7-mMg" firstAttribute="leading" secondItem="zDp-JM-L66" secondAttribute="leading" constant="91" id="z2d-VW-tRT"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -79,6 +111,8 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="X9z-M8-lbu"/>
+                                        <exclude reference="aXl-li-PTr"/>
+                                        <exclude reference="z2d-VW-tRT"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
@@ -88,6 +122,8 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="X9z-M8-lbu"/>
+                                        <include reference="aXl-li-PTr"/>
+                                        <include reference="z2d-VW-tRT"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -97,13 +133,6 @@
                                     <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="YKy-gT-tC2"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="clip" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-Oh-kVE">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -120,6 +149,7 @@
                             <constraint firstItem="tC0-Oh-kVE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="e3U-le-eKY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zDp-JM-L66" secondAttribute="trailing" id="fRf-Kr-E4f"/>
                             <constraint firstItem="zDp-JM-L66" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nC2-qV-myV"/>
+                            <constraint firstItem="uS9-Z7-mMg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="281" id="rc9-Kx-e1R"/>
                             <constraint firstItem="Tsb-Tf-bH9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="w9k-ej-9M6">
                                 <variation key="widthClass=compact" constant="-20"/>
                             </constraint>
@@ -133,8 +163,8 @@
                                 <exclude reference="Tsb-Tf-bH9"/>
                                 <exclude reference="oxE-Ne-LNx"/>
                                 <exclude reference="nSx-Na-TtJ"/>
-                                <exclude reference="zDp-JM-L66"/>
                                 <exclude reference="tC0-Oh-kVE"/>
+                                <exclude reference="zDp-JM-L66"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="5QN-Xp-0DH"/>
@@ -148,6 +178,7 @@
                                 <exclude reference="WdI-Id-goA"/>
                                 <exclude reference="dWk-33-RDA"/>
                                 <exclude reference="e3U-le-eKY"/>
+                                <exclude reference="rc9-Kx-e1R"/>
                                 <exclude reference="5RP-n5-2by"/>
                                 <exclude reference="D0j-3Z-4hA"/>
                                 <exclude reference="z2z-p8-eq4"/>
@@ -158,8 +189,8 @@
                                 <include reference="Tsb-Tf-bH9"/>
                                 <include reference="oxE-Ne-LNx"/>
                                 <include reference="nSx-Na-TtJ"/>
-                                <include reference="zDp-JM-L66"/>
                                 <include reference="tC0-Oh-kVE"/>
+                                <include reference="zDp-JM-L66"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="5QN-Xp-0DH"/>
@@ -173,6 +204,7 @@
                                 <include reference="WdI-Id-goA"/>
                                 <include reference="dWk-33-RDA"/>
                                 <include reference="e3U-le-eKY"/>
+                                <include reference="rc9-Kx-e1R"/>
                                 <include reference="5RP-n5-2by"/>
                                 <include reference="D0j-3Z-4hA"/>
                                 <include reference="z2z-p8-eq4"/>
