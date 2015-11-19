@@ -163,13 +163,13 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Events" id="I20-ik-1SJ">
-                                        <barButtonItem key="leftBarButtonItem" title="dew" id="nei-d0-Xfj">
+                                        <barButtonItem key="leftBarButtonItem" title="Camera" id="nei-d0-Xfj">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6mc-y1-Ki6">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" image="Camera">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="widthClass=compact"/>
@@ -292,24 +292,16 @@
                         </connections>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <connections>
-                        <outlet property="Sort" destination="6mc-y1-Ki6" id="Ln5-XZ-eJj"/>
-                        <outlet property="event1" destination="uS9-Z7-mMg" id="Vu3-cU-ehV"/>
-                        <outlet property="event2" destination="7eb-C6-gR6" id="YyF-fK-LKs"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="dDg-jc-xrB"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="jWt-cd-arK">
                     <connections>
-                        <action selector="pan:" destination="BYZ-38-t0r" id="6dJ-dd-Ge4"/>
+                        <action selector="moveAround:" destination="BYZ-38-t0r" id="xor-oy-kYN"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="367.5" y="238"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Camera" width="16" height="16"/>
-    </resources>
 </document>
