@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,40 +23,176 @@
                                 <animations/>
                                 <color key="barTintColor" red="0.22352941176470587" green="0.85098039215686272" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Events" id="I20-ik-1SJ"/>
+                                    <navigationItem title="Events" id="I20-ik-1SJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Sort" style="plain" id="nei-d0-Xfj">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6mc-y1-Ki6">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Sort">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
-                                </variation>
                             </navigationBar>
-                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" text="" placeholder="Find an event" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-Na-TtJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxE-Ne-LNx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="upcoming">
+                                    <color key="titleColor" red="0.2283453525641026" green="0.2283453525641026" blue="0.2283453525641026" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Find an event" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-Na-TtJ">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
                                 <animations/>
                                 <color key="barTintColor" red="0.22352941179999999" green="0.85098039219999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="44" width="400" height="44"/>
-                                </variation>
                             </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-JM-L66">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uS9-Z7-mMg">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Phi Psi Volcano Party"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="177" y="178" width="78" height="53"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="Event1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jm6-h3-Um3"/>
+                                            <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="Tui-aZ-zGP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="X9z-M8-lbu"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="uS9-Z7-mMg"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="X9z-M8-lbu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="152" width="400" height="448"/>
+                                    <mask key="subviews">
+                                        <include reference="uS9-Z7-mMg"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="X9z-M8-lbu"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="juo-Fq-2H9"/>
+                                    <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="FtE-BX-VIs"/>
+                                    <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="paL-CN-R41"/>
+                                    <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="YKy-gT-tC2"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="clip" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-Oh-kVE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Tsb-Tf-bH9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" symbolic="YES" id="5QN-Xp-0DH"/>
+                            <constraint firstItem="oxE-Ne-LNx" firstAttribute="leading" secondItem="tC0-Oh-kVE" secondAttribute="trailing" constant="75" id="5RP-n5-2by"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oxE-Ne-LNx" secondAttribute="trailing" id="D0j-3Z-4hA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nSx-Na-TtJ" secondAttribute="trailing" constant="-20" id="KPv-Uz-rwX"/>
+                            <constraint firstItem="nSx-Na-TtJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="LPw-lS-qm8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tC0-Oh-kVE" secondAttribute="trailing" constant="143" id="WdI-Id-goA"/>
+                            <constraint firstItem="nSx-Na-TtJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Y4o-UX-5kY"/>
+                            <constraint firstItem="tC0-Oh-kVE" firstAttribute="top" secondItem="nSx-Na-TtJ" secondAttribute="bottom" id="dWk-33-RDA"/>
+                            <constraint firstItem="tC0-Oh-kVE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="e3U-le-eKY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zDp-JM-L66" secondAttribute="trailing" id="fRf-Kr-E4f"/>
+                            <constraint firstItem="zDp-JM-L66" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nC2-qV-myV"/>
+                            <constraint firstItem="Tsb-Tf-bH9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="w9k-ej-9M6">
+                                <variation key="widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tsb-Tf-bH9" secondAttribute="trailing" constant="-20" id="wSm-IX-guA">
+                                <variation key="widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="oxE-Ne-LNx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="z2z-p8-eq4"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Tsb-Tf-bH9"/>
+                                <exclude reference="oxE-Ne-LNx"/>
                                 <exclude reference="nSx-Na-TtJ"/>
+                                <exclude reference="zDp-JM-L66"/>
+                                <exclude reference="tC0-Oh-kVE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5QN-Xp-0DH"/>
+                                <exclude reference="w9k-ej-9M6"/>
+                                <exclude reference="wSm-IX-guA"/>
+                                <exclude reference="KPv-Uz-rwX"/>
+                                <exclude reference="LPw-lS-qm8"/>
+                                <exclude reference="Y4o-UX-5kY"/>
+                                <exclude reference="fRf-Kr-E4f"/>
+                                <exclude reference="nC2-qV-myV"/>
+                                <exclude reference="WdI-Id-goA"/>
+                                <exclude reference="dWk-33-RDA"/>
+                                <exclude reference="e3U-le-eKY"/>
+                                <exclude reference="5RP-n5-2by"/>
+                                <exclude reference="D0j-3Z-4hA"/>
+                                <exclude reference="z2z-p8-eq4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Tsb-Tf-bH9"/>
+                                <include reference="oxE-Ne-LNx"/>
                                 <include reference="nSx-Na-TtJ"/>
+                                <include reference="zDp-JM-L66"/>
+                                <include reference="tC0-Oh-kVE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5QN-Xp-0DH"/>
+                                <include reference="w9k-ej-9M6"/>
+                                <include reference="wSm-IX-guA"/>
+                                <include reference="KPv-Uz-rwX"/>
+                                <include reference="LPw-lS-qm8"/>
+                                <include reference="Y4o-UX-5kY"/>
+                                <include reference="fRf-Kr-E4f"/>
+                                <include reference="nC2-qV-myV"/>
+                                <include reference="WdI-Id-goA"/>
+                                <include reference="dWk-33-RDA"/>
+                                <include reference="e3U-le-eKY"/>
+                                <include reference="5RP-n5-2by"/>
+                                <include reference="D0j-3Z-4hA"/>
+                                <include reference="z2z-p8-eq4"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="tzQ-38-ZN7"/>
+                            <outletCollection property="gestureRecognizers" destination="jWt-cd-arK" appends="YES" id="XBO-HV-nxU"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="dDg-jc-xrB"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jWt-cd-arK">
+                    <connections>
+                        <action selector="moveAround:" destination="BYZ-38-t0r" id="xor-oy-kYN"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="367.5" y="238"/>
         </scene>
     </scenes>
 </document>
