@@ -12,6 +12,16 @@
 		0F5EA2A21BF5DDDD004A607F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5EA2A01BF5DDDD004A607F /* Main.storyboard */; };
 		0F5EA2A41BF5DDDD004A607F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5EA2A31BF5DDDD004A607F /* Assets.xcassets */; };
 		0F5EA2A71BF5DDDD004A607F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5EA2A51BF5DDDD004A607F /* LaunchScreen.storyboard */; };
+		0FAE552E1BFF0CAB0004529F /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE552D1BFF0CAB0004529F /* splash.png */; settings = {ASSET_TAGS = (); }; };
+		0FAE55341BFF2EC20004529F /* home (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55331BFF2EC20004529F /* home (2).png */; settings = {ASSET_TAGS = (); }; };
+		0FAE55381BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55371BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png */; settings = {ASSET_TAGS = (); }; };
+		0FAE553C1BFF2FE10004529F /* calendar-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE553B1BFF2FE10004529F /* calendar-24.png */; settings = {ASSET_TAGS = (); }; };
+		0FAE553E1BFF39960004529F /* herd logo 24X24.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE553D1BFF39960004529F /* herd logo 24X24.png */; settings = {ASSET_TAGS = (); }; };
+		0FAE55401BFF889E0004529F /* mqdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE553F1BFF889D0004529F /* mqdefault.jpg */; settings = {ASSET_TAGS = (); }; };
+		0FAE55421BFF897F0004529F /* winecheese1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55411BFF897F0004529F /* winecheese1.jpg */; settings = {ASSET_TAGS = (); }; };
+		0FAE55441BFF89B90004529F /* volcano-f1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55431BFF89B90004529F /* volcano-f1.jpg */; settings = {ASSET_TAGS = (); }; };
+		0FAE55461BFF89EE0004529F /* mic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55451BFF89EE0004529F /* mic.jpg */; settings = {ASSET_TAGS = (); }; };
+		0FD16ABF1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FD16ABE1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		0F5EA2A31BF5DDDD004A607F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5EA2A61BF5DDDD004A607F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F5EA2A81BF5DDDD004A607F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FAE552D1BFF0CAB0004529F /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		0FAE55331BFF2EC20004529F /* home (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home (2).png"; sourceTree = "<group>"; };
+		0FAE55371BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time-And-Date-Clock-icon (2).png"; sourceTree = "<group>"; };
+		0FAE553B1BFF2FE10004529F /* calendar-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-24.png"; sourceTree = "<group>"; };
+		0FAE553D1BFF39960004529F /* herd logo 24X24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "herd logo 24X24.png"; sourceTree = "<group>"; };
+		0FAE553F1BFF889D0004529F /* mqdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mqdefault.jpg; sourceTree = "<group>"; };
+		0FAE55411BFF897F0004529F /* winecheese1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winecheese1.jpg; sourceTree = "<group>"; };
+		0FAE55431BFF89B90004529F /* volcano-f1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "volcano-f1.jpg"; sourceTree = "<group>"; };
+		0FAE55451BFF89EE0004529F /* mic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mic.jpg; sourceTree = "<group>"; };
+		0FD16ABE1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tumblr_mb6i7wp8a21r6njsmo1_1280.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +78,28 @@
 				0F5EA29E1BF5DDDD004A607F /* ViewController.swift */,
 				0F5EA2A01BF5DDDD004A607F /* Main.storyboard */,
 				0F5EA2A31BF5DDDD004A607F /* Assets.xcassets */,
+				0FAE552C1BFF0C500004529F /* Supporting Files */,
 				0F5EA2A51BF5DDDD004A607F /* LaunchScreen.storyboard */,
 				0F5EA2A81BF5DDDD004A607F /* Info.plist */,
 			);
 			path = herd;
+			sourceTree = "<group>";
+		};
+		0FAE552C1BFF0C500004529F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FAE552D1BFF0CAB0004529F /* splash.png */,
+				0FAE55451BFF89EE0004529F /* mic.jpg */,
+				0FAE55431BFF89B90004529F /* volcano-f1.jpg */,
+				0FD16ABE1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg */,
+				0FAE55411BFF897F0004529F /* winecheese1.jpg */,
+				0FAE553F1BFF889D0004529F /* mqdefault.jpg */,
+				0FAE55371BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png */,
+				0FAE553D1BFF39960004529F /* herd logo 24X24.png */,
+				0FAE553B1BFF2FE10004529F /* calendar-24.png */,
+				0FAE55331BFF2EC20004529F /* home (2).png */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +160,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAE553C1BFF2FE10004529F /* calendar-24.png in Resources */,
+				0FAE55421BFF897F0004529F /* winecheese1.jpg in Resources */,
+				0FAE552E1BFF0CAB0004529F /* splash.png in Resources */,
+				0FAE55461BFF89EE0004529F /* mic.jpg in Resources */,
+				0FAE55341BFF2EC20004529F /* home (2).png in Resources */,
+				0FAE55381BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png in Resources */,
+				0FAE55441BFF89B90004529F /* volcano-f1.jpg in Resources */,
+				0FD16ABF1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg in Resources */,
 				0F5EA2A71BF5DDDD004A607F /* LaunchScreen.storyboard in Resources */,
 				0F5EA2A41BF5DDDD004A607F /* Assets.xcassets in Resources */,
+				0FAE553E1BFF39960004529F /* herd logo 24X24.png in Resources */,
+				0FAE55401BFF889E0004529F /* mqdefault.jpg in Resources */,
 				0F5EA2A21BF5DDDD004A607F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +334,7 @@
 				0F5EA2AD1BF5DDDD004A607F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
