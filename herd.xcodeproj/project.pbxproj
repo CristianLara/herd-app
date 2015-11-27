@@ -12,6 +12,14 @@
 		0F5EA2A21BF5DDDD004A607F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5EA2A01BF5DDDD004A607F /* Main.storyboard */; };
 		0F5EA2A41BF5DDDD004A607F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5EA2A31BF5DDDD004A607F /* Assets.xcassets */; };
 		0F5EA2A71BF5DDDD004A607F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5EA2A51BF5DDDD004A607F /* LaunchScreen.storyboard */; };
+		0F8FCFF81C07908F005A7CC7 /* BubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FCFF51C07908F005A7CC7 /* BubbleNode.swift */; settings = {ASSET_TAGS = (); }; };
+		0F8FCFF91C07908F005A7CC7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FCFF61C07908F005A7CC7 /* Event.swift */; settings = {ASSET_TAGS = (); }; };
+		0F8FCFFA1C07908F005A7CC7 /* BubblesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FCFF71C07908F005A7CC7 /* BubblesScene.swift */; settings = {ASSET_TAGS = (); }; };
+		0F8FCFFE1C0791D4005A7CC7 /* SIFloatingCollectionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FCFFB1C0791D4005A7CC7 /* SIFloatingCollectionScene.swift */; settings = {ASSET_TAGS = (); }; };
+		0F8FCFFF1C0791D4005A7CC7 /* SIFloatingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FCFFC1C0791D4005A7CC7 /* SIFloatingNode.swift */; settings = {ASSET_TAGS = (); }; };
+		0F8FD0151C07F120005A7CC7 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FD0141C07F120005A7CC7 /* EventViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0F8FD0171C085B58005A7CC7 /* CurrentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FD0161C085B58005A7CC7 /* CurrentEvent.swift */; settings = {ASSET_TAGS = (); }; };
+		0F8FD0191C0902F6005A7CC7 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FD0181C0902F6005A7CC7 /* UpcomingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0FAE552E1BFF0CAB0004529F /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE552D1BFF0CAB0004529F /* splash.png */; settings = {ASSET_TAGS = (); }; };
 		0FAE55341BFF2EC20004529F /* home (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55331BFF2EC20004529F /* home (2).png */; settings = {ASSET_TAGS = (); }; };
 		0FAE55381BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55371BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png */; settings = {ASSET_TAGS = (); }; };
@@ -32,6 +40,14 @@
 		0F5EA2A31BF5DDDD004A607F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5EA2A61BF5DDDD004A607F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F5EA2A81BF5DDDD004A607F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F8FCFF51C07908F005A7CC7 /* BubbleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleNode.swift; sourceTree = "<group>"; };
+		0F8FCFF61C07908F005A7CC7 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0F8FCFF71C07908F005A7CC7 /* BubblesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubblesScene.swift; sourceTree = "<group>"; };
+		0F8FCFFB1C0791D4005A7CC7 /* SIFloatingCollectionScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIFloatingCollectionScene.swift; sourceTree = "<group>"; };
+		0F8FCFFC1C0791D4005A7CC7 /* SIFloatingNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIFloatingNode.swift; sourceTree = "<group>"; };
+		0F8FD0141C07F120005A7CC7 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		0F8FD0161C085B58005A7CC7 /* CurrentEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentEvent.swift; sourceTree = "<group>"; };
+		0F8FD0181C0902F6005A7CC7 /* UpcomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		0FAE552D1BFF0CAB0004529F /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		0FAE55331BFF2EC20004529F /* home (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home (2).png"; sourceTree = "<group>"; };
 		0FAE55371BFF2F5C0004529F /* Time-And-Date-Clock-icon (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time-And-Date-Clock-icon (2).png"; sourceTree = "<group>"; };
@@ -74,20 +90,37 @@
 		0F5EA29B1BF5DDDD004A607F /* herd */ = {
 			isa = PBXGroup;
 			children = (
+				0F8FCFFD1C0791D4005A7CC7 /* Sources */,
 				0F5EA29C1BF5DDDD004A607F /* AppDelegate.swift */,
 				0F5EA29E1BF5DDDD004A607F /* ViewController.swift */,
+				0F8FD0181C0902F6005A7CC7 /* UpcomingViewController.swift */,
+				0F8FD0141C07F120005A7CC7 /* EventViewController.swift */,
 				0F5EA2A01BF5DDDD004A607F /* Main.storyboard */,
 				0F5EA2A31BF5DDDD004A607F /* Assets.xcassets */,
 				0FAE552C1BFF0C500004529F /* Supporting Files */,
+				0F8FCFF61C07908F005A7CC7 /* Event.swift */,
+				0F8FD0161C085B58005A7CC7 /* CurrentEvent.swift */,
+				0F8FCFF51C07908F005A7CC7 /* BubbleNode.swift */,
+				0F8FCFF71C07908F005A7CC7 /* BubblesScene.swift */,
 				0F5EA2A51BF5DDDD004A607F /* LaunchScreen.storyboard */,
-				0F5EA2A81BF5DDDD004A607F /* Info.plist */,
 			);
 			path = herd;
 			sourceTree = "<group>";
 		};
+		0F8FCFFD1C0791D4005A7CC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0F8FCFFB1C0791D4005A7CC7 /* SIFloatingCollectionScene.swift */,
+				0F8FCFFC1C0791D4005A7CC7 /* SIFloatingNode.swift */,
+			);
+			name = Sources;
+			path = "/Users/cristianlara/Downloads/SIFloatingCollection_Swift-master/Example/Example/../../Sources";
+			sourceTree = "<absolute>";
+		};
 		0FAE552C1BFF0C500004529F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F5EA2A81BF5DDDD004A607F /* Info.plist */,
 				0FAE552D1BFF0CAB0004529F /* splash.png */,
 				0FAE55451BFF89EE0004529F /* mic.jpg */,
 				0FAE55431BFF89B90004529F /* volcano-f1.jpg */,
@@ -183,8 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F8FCFF91C07908F005A7CC7 /* Event.swift in Sources */,
+				0F8FCFFF1C0791D4005A7CC7 /* SIFloatingNode.swift in Sources */,
+				0F8FD0171C085B58005A7CC7 /* CurrentEvent.swift in Sources */,
+				0F8FCFF81C07908F005A7CC7 /* BubbleNode.swift in Sources */,
+				0F8FCFFE1C0791D4005A7CC7 /* SIFloatingCollectionScene.swift in Sources */,
 				0F5EA29F1BF5DDDD004A607F /* ViewController.swift in Sources */,
+				0F8FD0151C07F120005A7CC7 /* EventViewController.swift in Sources */,
 				0F5EA29D1BF5DDDD004A607F /* AppDelegate.swift in Sources */,
+				0F8FD0191C0902F6005A7CC7 /* UpcomingViewController.swift in Sources */,
+				0F8FCFFA1C07908F005A7CC7 /* BubblesScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

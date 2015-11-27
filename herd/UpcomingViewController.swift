@@ -1,18 +1,15 @@
 //
-//  ViewController.swift
+//  UpcomingViewController.swift
 //  herd
 //
-//  Created by Cristian Lara on 11/13/15.
+//  Created by Cristian Lara on 11/27/15.
 //  Copyright © 2015 cs147. All rights reserved.
 //
-//  This ViewController handles everything in the Home Page.
-//  It contains all the events and bubbles, and is connected
-//  to the event page.
 
 import UIKit
 import SpriteKit
 
-class ViewController: UIViewController {
+class UpcomingViewController: UIViewController {
     //instance variables for the floating bubbles scene
     private var skView: SKView!
     private var floatingCollectionScene: BubblesScene!
@@ -22,7 +19,7 @@ class ViewController: UIViewController {
     //when the view loads
     override func viewDidLoad() {
         super.viewDidLoad()
-        FGSingleton.sharedInstance.rootViewController = self //makes this view available globally
+        FGSingleton.sharedInstance.upcomingViewController = self //makes this view available globally
         setupScene() //setup the bubbles scene
         addEvents() //create our events and make bubbles
     }
@@ -44,10 +41,9 @@ class ViewController: UIViewController {
         let color = SKColor.init(red: 57.0/255.0, green: 217.0/255.0, blue: 110.0/255.0, alpha: 1.0)
         
         //hard coded events
-        Events.append(Event.instantiate("Phi Psi", size: 60.0, color: color, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.8, image: UIImage(named: "volcano-f1.jpg")!))
-        Events.append(Event.instantiate("Wine & Cheese", size: 40.0, color: color, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.2, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("EBF", size: 50.0, color: color, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.7, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Karaoke", size: 30.0, color: color, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.1, image: UIImage(named: "mic.jpg")!))
+        Events.append(Event.instantiate("Full Moon", size: 60.0, color: color, location: "Main Quad", date: "Oct 24, 2015", time: "10pm - 12am", rating: 4.8, image: UIImage(named: "mqdefault.jpg")!))
+        Events.append(Event.instantiate("future event1", size: 40.0, color: color, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.2, image: UIImage(named: "winecheese1.jpg")!))
+        Events.append(Event.instantiate("future event2", size: 30.0, color: color, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.1, image: UIImage(named: "mic.jpg")!))
         
         //make a bubbles for each event and add it to the scene
         for event in Events {
@@ -62,11 +58,10 @@ class ViewController: UIViewController {
     }
     
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "EventPageSegue" {
-//            if let destinationVC = segue.destinationViewController as? EventViewController{
-//            }
-//        }
-//    }
+    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    //        if segue.identifier == "EventPageSegue" {
+    //            if let destinationVC = segue.destinationViewController as? EventViewController{
+    //            }
+    //        }
+    //    }
 }
-
