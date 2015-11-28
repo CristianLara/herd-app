@@ -24,6 +24,7 @@ extension CGFloat {
 class BubblesScene: SIFloatingCollectionScene {
     var bottomOffset: CGFloat = 120
     var topOffset: CGFloat = 0
+    var Nodes = [SKNode]()
     
     override func didMoveToView(view: SKView) {
         super.didMoveToView(view)
@@ -59,6 +60,7 @@ class BubblesScene: SIFloatingCollectionScene {
             }
             node.position = CGPointMake(x, y)
         }
+        Nodes.append(node)
         super.addChild(node)
     }
     
@@ -109,5 +111,17 @@ class BubblesScene: SIFloatingCollectionScene {
             }
         })
         return action
+    }
+    
+    func removeAllNodes() {
+        for node in Nodes {
+            self.throwNode(
+                node,
+                toPoint: CGPointMake(self.size.width / 2, self.size.height / 2),
+                completion: {
+                    node.removeFromParent()
+                }
+            )
+        }
     }
 }
