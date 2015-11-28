@@ -86,6 +86,7 @@ class ViewController: UIViewController {
         
         //hard coded events
         Events.append(Event.instantiate("Phi Psi", size: 60.0, color: color, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.8, image: UIImage(named: "volcano-f1.jpg")!))
+        Events.append(Event.instantiate("Frost", size: 70.0, color: color, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
         Events.append(Event.instantiate("Wine & Cheese", size: 40.0, color: color, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.2, image: UIImage(named: "winecheese1.jpg")!))
         Events.append(Event.instantiate("EBF", size: 50.0, color: color, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.7, image: UIImage(named: "splash.png")!))
         Events.append(Event.instantiate("Karaoke", size: 30.0, color: color, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.1, image: UIImage(named: "mic.jpg")!))

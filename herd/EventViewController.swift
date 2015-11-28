@@ -21,6 +21,9 @@ class EventViewController: UIViewController, UINavigationControllerDelegate, UII
     @IBOutlet weak var rating: UILabel!
     @IBOutlet weak var camera: UIButton!
     
+    @IBOutlet weak var locationIcon: UILabel!
+    @IBOutlet weak var dateIcon: UILabel!
+    @IBOutlet weak var timeIcon: UILabel!
 
     //before view appears, update the information to represent the event that was clicked
     override func viewWillAppear(animated: Bool) {
@@ -29,9 +32,9 @@ class EventViewController: UIViewController, UINavigationControllerDelegate, UII
         camera.titleLabel?.font = UIFont.fontAwesomeOfSize(25)
         camera.setTitle(String.fontAwesomeIconWithName(.Camera), forState: .Normal)
         
-        location.text = FGSingleton.sharedInstance.currentEvent.location
-        date.text = FGSingleton.sharedInstance.currentEvent.date
-        time.text = FGSingleton.sharedInstance.currentEvent.time
+        location.text = "  " + FGSingleton.sharedInstance.currentEvent.location
+        date.text = "  " + FGSingleton.sharedInstance.currentEvent.date
+        time.text = "   " + FGSingleton.sharedInstance.currentEvent.time
         image.image = FGSingleton.sharedInstance.currentEvent.image
         image.clipsToBounds = true
         
@@ -54,6 +57,12 @@ class EventViewController: UIViewController, UINavigationControllerDelegate, UII
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
+        locationIcon.font = UIFont.fontAwesomeOfSize(18)
+        locationIcon.text = String.fontAwesomeIconWithName(FontAwesome.Home)
+        dateIcon.font = UIFont.fontAwesomeOfSize(18)
+        dateIcon.text = String.fontAwesomeIconWithName(FontAwesome.Calendar)
+        timeIcon.font = UIFont.fontAwesomeOfSize(18)
+        timeIcon.text = String.fontAwesomeIconWithName(FontAwesome.ClockO)
     }
     
     var picker: UIImagePickerController! = UIImagePickerController()
