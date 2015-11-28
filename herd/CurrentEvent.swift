@@ -16,5 +16,4 @@ class FGSingleton {
     
     var currentEvent: Event!
     var rootViewController: ViewController!
-    var upcomingViewController: UpcomingViewController!
 }
