@@ -21,9 +21,9 @@
 		0F8FD01F1C093786005A7CC7 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FD01B1C093786005A7CC7 /* Enum.swift */; settings = {ASSET_TAGS = (); }; };
 		0F8FD0201C093786005A7CC7 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD01D1C093786005A7CC7 /* FontAwesome.otf */; settings = {ASSET_TAGS = (); }; };
 		0F8FD0211C093786005A7CC7 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FD01E1C093786005A7CC7 /* FontAwesome.swift */; settings = {ASSET_TAGS = (); }; };
-		0F8FD0231C0BC65B005A7CC7 /* Herd Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD0221C0BC65B005A7CC7 /* Herd Logo.png */; settings = {ASSET_TAGS = (); }; };
 		0F8FD0251C0C241E005A7CC7 /* Herd Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD0241C0C241E005A7CC7 /* Herd Icon.jpg */; settings = {ASSET_TAGS = (); }; };
 		0F8FD0271C0C2740005A7CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD0261C0C2740005A7CC7 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		0F8FD02A1C0C4C91005A7CC7 /* Herd Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD0291C0C4C91005A7CC7 /* Herd Logo.png */; settings = {ASSET_TAGS = (); }; };
 		0FAE552E1BFF0CAB0004529F /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE552D1BFF0CAB0004529F /* splash.png */; settings = {ASSET_TAGS = (); }; };
 		0FAE553E1BFF39960004529F /* herd logo 24X24.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE553D1BFF39960004529F /* herd logo 24X24.png */; settings = {ASSET_TAGS = (); }; };
 		0FAE55401BFF889E0004529F /* mqdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE553F1BFF889D0004529F /* mqdefault.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -34,7 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F5EA2991BF5DDDD004A607F /* Herd.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Herd.temp_caseinsensitive_rename.app; path = "/Users/cristianlara/Developer/CS147/high-fidelity/herd/build/Debug-iphoneos/Herd.temp_caseinsensitive_rename.app"; sourceTree = "<absolute>"; };
 		0F5EA29C1BF5DDDD004A607F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F5EA29E1BF5DDDD004A607F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F5EA2A11BF5DDDD004A607F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,9 +51,10 @@
 		0F8FD01C1C093786005A7CC7 /* FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesome.h; sourceTree = "<group>"; };
 		0F8FD01D1C093786005A7CC7 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		0F8FD01E1C093786005A7CC7 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
-		0F8FD0221C0BC65B005A7CC7 /* Herd Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Herd Logo.png"; sourceTree = "<group>"; };
 		0F8FD0241C0C241E005A7CC7 /* Herd Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Herd Icon.jpg"; sourceTree = "<group>"; };
 		0F8FD0261C0C2740005A7CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/cristianlara/Developer/CS147/high-fidelity/herd/herd/Assets.xcassets"; sourceTree = "<absolute>"; };
+		0F8FD0281C0C3A0E005A7CC7 /* Herd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Herd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F8FD0291C0C4C91005A7CC7 /* Herd Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Herd Logo.png"; sourceTree = "<group>"; };
 		0FAE552D1BFF0CAB0004529F /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		0FAE553D1BFF39960004529F /* herd logo 24X24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "herd logo 24X24.png"; sourceTree = "<group>"; };
 		0FAE553F1BFF889D0004529F /* mqdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mqdefault.jpg; sourceTree = "<group>"; };
@@ -79,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				0F5EA29B1BF5DDDD004A607F /* herd */,
+				0F8FD0281C0C3A0E005A7CC7 /* Herd.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,8 +115,8 @@
 			children = (
 				0F8FCFFD1C0791D4005A7CC7 /* Sources */,
 				0F8FD0261C0C2740005A7CC7 /* Assets.xcassets */,
-				0F8FD0221C0BC65B005A7CC7 /* Herd Logo.png */,
 				0F8FD01B1C093786005A7CC7 /* Enum.swift */,
+				0F8FD0291C0C4C91005A7CC7 /* Herd Logo.png */,
 				0F8FD01C1C093786005A7CC7 /* FontAwesome.h */,
 				0F8FD01D1C093786005A7CC7 /* FontAwesome.otf */,
 				0F8FD01E1C093786005A7CC7 /* FontAwesome.swift */,
@@ -150,7 +151,7 @@
 			);
 			name = herd;
 			productName = herd;
-			productReference = 0F5EA2991BF5DDDD004A607F /* Herd.temp_caseinsensitive_rename.app */;
+			productReference = 0F8FD0281C0C3A0E005A7CC7 /* Herd.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,8 +201,8 @@
 				0F8FD0271C0C2740005A7CC7 /* Assets.xcassets in Resources */,
 				0F5EA2A71BF5DDDD004A607F /* LaunchScreen.storyboard in Resources */,
 				0F8FD0201C093786005A7CC7 /* FontAwesome.otf in Resources */,
-				0F8FD0231C0BC65B005A7CC7 /* Herd Logo.png in Resources */,
 				0FAE553E1BFF39960004529F /* herd logo 24X24.png in Resources */,
+				0F8FD02A1C0C4C91005A7CC7 /* Herd Logo.png in Resources */,
 				0FAE55401BFF889E0004529F /* mqdefault.jpg in Resources */,
 				0F5EA2A21BF5DDDD004A607F /* Main.storyboard in Resources */,
 			);
@@ -340,7 +341,7 @@
 				INFOPLIST_FILE = herd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs147.herd;
-				PRODUCT_NAME = Herd.temp_caseinsensitive_rename;
+				PRODUCT_NAME = Herd;
 			};
 			name = Debug;
 		};
@@ -351,7 +352,7 @@
 				INFOPLIST_FILE = herd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs147.herd;
-				PRODUCT_NAME = Herd.temp_caseinsensitive_rename;
+				PRODUCT_NAME = Herd;
 			};
 			name = Release;
 		};

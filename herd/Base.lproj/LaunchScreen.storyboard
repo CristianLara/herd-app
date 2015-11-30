@@ -32,7 +32,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Herd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybv-Ou-5Vc">
-                                <rect key="frame" x="251" y="402" width="99" height="46"/>
+                                <rect key="frame" x="251" y="343" width="99" height="46"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,7 +47,7 @@
                             <constraint firstItem="Ybv-Ou-5Vc" firstAttribute="top" secondItem="TTQ-IO-xKY" secondAttribute="bottom" constant="10" id="IC0-Sp-GeI"/>
                             <constraint firstItem="OSv-qw-VSx" firstAttribute="centerX" secondItem="CjV-cF-kpB" secondAttribute="centerX" id="jjV-zW-KNf"/>
                             <constraint firstItem="Ybv-Ou-5Vc" firstAttribute="centerX" secondItem="CjV-cF-kpB" secondAttribute="centerX" id="jjz-lA-fax"/>
-                            <constraint firstItem="fbO-dZ-hyU" firstAttribute="top" secondItem="OSv-qw-VSx" secondAttribute="bottom" constant="20" id="xkH-jK-PBW"/>
+                            <constraint firstItem="fbO-dZ-hyU" firstAttribute="top" secondItem="OSv-qw-VSx" secondAttribute="bottom" constant="5" id="xkH-jK-PBW"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -57,6 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Herd Logo.png" width="800" height="800"/>
+        <image name="Herd Logo.png" width="1024" height="1024"/>
     </resources>
 </document>
