@@ -35,6 +35,8 @@ class ViewController: UIViewController {
                 self.nowButton.transform = CGAffineTransformMakeScale(0.5, 0.5)
                 sender.center.x = self.view.bounds.width / 2
                 self.nowButton.center.x = self.nowButton.bounds.width / 2 + 20
+                sender.alpha = 1.0
+                self.nowButton.alpha = 0.4
             })
         }
     }
@@ -53,7 +55,9 @@ class ViewController: UIViewController {
                 sender.transform = CGAffineTransformMakeScale(1, 1)
                 self.upcomingButton.transform = CGAffineTransformMakeScale(0.5, 0.5)
                 sender.center.x = self.view.bounds.width / 2
-                self.upcomingButton.center.x = self.view.bounds.width - self.upcomingButton.bounds.width / 2 - 20
+                self.upcomingButton.center.x = self.view.bounds.width - self.upcomingButton.bounds.width / 2
+                sender.alpha = 1.0
+                self.upcomingButton.alpha = 0.4
             })
         }
     }
@@ -62,6 +66,8 @@ class ViewController: UIViewController {
     //when the view loads
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.upcomingButton.alpha = 0.4
+//        self.upcomingButton.
         upcomingButton.transform = CGAffineTransformMakeScale(0.5, 0.5)
         FGSingleton.sharedInstance.rootViewController = self //makes this view available globally
         setupScene() //setup the bubbles scene
@@ -82,14 +88,12 @@ class ViewController: UIViewController {
     
     //Creates our events and uses them to make bubbles
     private func addCurrentEvents() {
-        let color = SKColor.init(red: 57.0/255.0, green: 217.0/255.0, blue: 110.0/255.0, alpha: 1.0)
-        
         //hard coded events
-        Events.append(Event.instantiate("Phi Psi", size: 60.0, color: color, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.8, image: UIImage(named: "volcano-f1.jpg")!))
-        Events.append(Event.instantiate("Frost", size: 70.0, color: color, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Wine & Cheese", size: 40.0, color: color, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.2, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("EBF", size: 50.0, color: color, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.7, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Karaoke", size: 30.0, color: color, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.1, image: UIImage(named: "mic.jpg")!))
+        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
+        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
+        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
         
         //make a bubbles for each event and add it to the scene
         for event in Events {
@@ -100,12 +104,27 @@ class ViewController: UIViewController {
     
     //Creates our events and uses them to make bubbles
     private func addUpcomingEvents() {
-        let color = SKColor.init(red: 57.0/255.0, green: 217.0/255.0, blue: 110.0/255.0, alpha: 1.0)
-        
         //hard coded events
-        Events.append(Event.instantiate("Full Moon", size: 60.0, color: color, location: "Main Quad", date: "Oct 24, 2015", time: "10pm - 12am", rating: 4.8, image: UIImage(named: "mqdefault.jpg")!))
-        Events.append(Event.instantiate("future event1", size: 40.0, color: color, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.2, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("future event2", size: 30.0, color: color, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.1, image: UIImage(named: "mic.jpg")!))
+        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
+        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
+        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
+        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
+        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
+        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
+        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
+        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
+        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
+        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
+        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
+        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
+        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
         
         //make a bubbles for each event and add it to the scene
         for event in Events {

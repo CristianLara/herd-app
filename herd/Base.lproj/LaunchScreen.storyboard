@@ -16,10 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Herd. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-qw-VSx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright (c) 2015 Herd. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-qw-VSx">
                                 <rect key="frame" x="127" y="559" width="346" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Herd Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-IO-xKY">
+                                <rect key="frame" x="225" y="185" width="150" height="150"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="CYY-h2-i5a"/>
+                                    <constraint firstAttribute="width" constant="150" id="kgc-2D-w7d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Herd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybv-Ou-5Vc">
+                                <rect key="frame" x="251" y="402" width="99" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,7 +42,11 @@
                         <animations/>
                         <color key="backgroundColor" red="0.22352941179999999" green="0.85098039219999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="TTQ-IO-xKY" firstAttribute="centerY" secondItem="CjV-cF-kpB" secondAttribute="centerY" constant="-40" id="8za-nr-Wb2"/>
+                            <constraint firstItem="TTQ-IO-xKY" firstAttribute="centerX" secondItem="CjV-cF-kpB" secondAttribute="centerX" id="BK4-b1-ZAN"/>
+                            <constraint firstItem="Ybv-Ou-5Vc" firstAttribute="top" secondItem="TTQ-IO-xKY" secondAttribute="bottom" constant="10" id="IC0-Sp-GeI"/>
                             <constraint firstItem="OSv-qw-VSx" firstAttribute="centerX" secondItem="CjV-cF-kpB" secondAttribute="centerX" id="jjV-zW-KNf"/>
+                            <constraint firstItem="Ybv-Ou-5Vc" firstAttribute="centerX" secondItem="CjV-cF-kpB" secondAttribute="centerX" id="jjz-lA-fax"/>
                             <constraint firstItem="fbO-dZ-hyU" firstAttribute="top" secondItem="OSv-qw-VSx" secondAttribute="bottom" constant="20" id="xkH-jK-PBW"/>
                         </constraints>
                     </view>
@@ -37,4 +56,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Herd Logo.png" width="800" height="800"/>
+    </resources>
 </document>

@@ -22,7 +22,7 @@ extension CGFloat {
 }
 
 class BubblesScene: SIFloatingCollectionScene {
-    var bottomOffset: CGFloat = 120
+    var bottomOffset: CGFloat = 130
     var topOffset: CGFloat = 0
     var Nodes = [SKNode]()
     

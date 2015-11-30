@@ -27,11 +27,11 @@ class Event {
     var image: UIImage!
 //  map of comments
     
-    class func instantiate(name: String, size: CGFloat, color: SKColor, location: String, date: String, time: String, rating: Double, image: UIImage) -> Event! {
+    class func instantiate(name: String, size: CGFloat, location: String, date: String, time: String, rating: Double, image: UIImage) -> Event! {
         let event = Event()
         event.name = name
         event.size = size
-        event.color = color
+        event.color = SKColor.init(hue: 0.39, saturation: 1.0 - (5 - CGFloat(rating)) * 0.2, brightness: 0.85, alpha: 1.0)
         event.location = location
         event.date = date
         event.time = time

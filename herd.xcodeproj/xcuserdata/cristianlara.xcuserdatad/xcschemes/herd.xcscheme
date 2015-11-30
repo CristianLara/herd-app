@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-               BuildableName = "herd.app"
+               BuildableName = "Herd.temp_caseinsensitive_rename.app"
                BlueprintName = "herd"
-               ReferencedContainer = "container:herd.xcodeproj">
+               ReferencedContainer = "container:Herd.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-            BuildableName = "herd.app"
+            BuildableName = "Herd.temp_caseinsensitive_rename.app"
             BlueprintName = "herd"
-            ReferencedContainer = "container:herd.xcodeproj">
+            ReferencedContainer = "container:Herd.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-            BuildableName = "herd.app"
+            BuildableName = "Herd.temp_caseinsensitive_rename.app"
             BlueprintName = "herd"
-            ReferencedContainer = "container:herd.xcodeproj">
+            ReferencedContainer = "container:Herd.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-            BuildableName = "herd.app"
+            BuildableName = "Herd.temp_caseinsensitive_rename.app"
             BlueprintName = "herd"
-            ReferencedContainer = "container:herd.xcodeproj">
+            ReferencedContainer = "container:Herd.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
