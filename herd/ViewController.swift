@@ -12,14 +12,16 @@
 import UIKit
 import SpriteKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     //instance variables for the floating bubbles scene
     private var skView: SKView!
-    private var floatingCollectionScene: BubblesScene!
+    var floatingCollectionScene: BubblesScene!
     //array of events
-    var Events = [Event]()
+    var currentEvents = [Event]()
+    var upcomingEvents = [Event]()
     var now:Bool = true
 
+//    @IBOutlet weak var sortButton: UIButton!
     @IBOutlet weak var upcomingButton: UIButton!
     @IBAction func upcoming(sender: UIButton) {
         if now {
@@ -27,8 +29,10 @@ class ViewController: UIViewController {
             for node in floatingCollectionScene.floatingNodes {
                 node.removeFromParent()
             }
-            Events.removeAll()
-            addUpcomingEvents()
+            for event in upcomingEvents {
+                let node = BubbleNode.instantiate(event, radius: event.size)
+                floatingCollectionScene.addChild(node)
+            }
             
             UIView.animateWithDuration(1, animations: {
                 sender.transform = CGAffineTransformMakeScale(1, 1)
@@ -48,8 +52,10 @@ class ViewController: UIViewController {
             for node in floatingCollectionScene.floatingNodes {
                 node.removeFromParent()
             }
-            Events.removeAll()
-            addCurrentEvents()
+            for event in currentEvents {
+                let node = BubbleNode.instantiate(event, radius: event.size)
+                floatingCollectionScene.addChild(node)
+            }
             
             UIView.animateWithDuration(1, animations: {
                 sender.transform = CGAffineTransformMakeScale(1, 1)
@@ -62,16 +68,43 @@ class ViewController: UIViewController {
         }
     }
     
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        if !now {
+//            UIView.animateWithDuration(1, animations: {
+//                self.upcomingButton.center.x = 0
+//                self.nowButton.center.x = -200
+//                print("APPEARING")
+//            })
+//        }
+//    }
+    
+//    override func viewDidAppear(animated: Bool) {
+//        super.viewDidAppear(animated)
+//        if !now {
+//            UIView.animateWithDuration(3, animations: {
+//                self.upcomingButton.center.x = self.view.bounds.width / 2
+//                self.nowButton.center.x = 50
+//                print("APPEARING")
+//            })
+//        }
+//    }
     
     //when the view loads
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.sortButton.titleLabel?.font = UIFont.fontAwesomeOfSize(25)
+//        self.sortButton.setTitle(String.fontAwesomeIconWithName(FontAwesome.Sort), forState: .Normal)
         self.upcomingButton.alpha = 0.4
-//        self.upcomingButton.
         upcomingButton.transform = CGAffineTransformMakeScale(0.5, 0.5)
         FGSingleton.sharedInstance.rootViewController = self //makes this view available globally
         setupScene() //setup the bubbles scene
-        addCurrentEvents() //create our events and make bubbles
+        createCurrentEvents() //create our events and make bubbles
+        createUpcomingEvents()
+        for event in currentEvents {
+            let node = BubbleNode.instantiate(event, radius: event.size)
+            floatingCollectionScene.addChild(node)
+        }
     }
     
     //Uses the bubbles class (that I didn't make). Shouldn't mess with this too much
@@ -87,50 +120,24 @@ class ViewController: UIViewController {
     }
     
     //Creates our events and uses them to make bubbles
-    private func addCurrentEvents() {
+    private func createCurrentEvents() {
         //hard coded events
-        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
-        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
-        
-        //make a bubbles for each event and add it to the scene
-        for event in Events {
-            let node = BubbleNode.instantiate(event, radius: event.size)
-            floatingCollectionScene.addChild(node)
-        }
+        currentEvents.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!, now: true))
+//        }
     }
     
     //Creates our events and uses them to make bubbles
-    private func addUpcomingEvents() {
+    private func createUpcomingEvents() {
         //hard coded events
-        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
-        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
-        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
-        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
-        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
-        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
-        Events.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!))
-        Events.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!))
-        Events.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!))
-        Events.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!))
-        
-        //make a bubbles for each event and add it to the scene
-        for event in Events {
-            let node = BubbleNode.instantiate(event, radius: event.size)
-            floatingCollectionScene.addChild(node)
-        }
+        upcomingEvents.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!, now: false))
+        upcomingEvents.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!, now: false))
+        upcomingEvents.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!, now: false))
+        upcomingEvents.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!, now: false))
+        upcomingEvents.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!, now: false))
     }
     
     //public function to handle transition to event page. Is called by each bubble when pressed
@@ -138,11 +145,21 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("EventPageSegue", sender: self) //segues into the "EventPage"
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if segue.identifier == "EventPageSegue" {
 //            if let destinationVC = segue.destinationViewController as? EventViewController{
 //            }
+//        }
+//        if !now {
+//            self.upcomingButton.center.x = self.view.bounds.width / 2
+//            self.nowButton.center.x = self.nowButton.bounds.width / 2 + 20
 //        }
 //    }
 }

@@ -20,14 +20,19 @@ class EventViewController: UIViewController, UINavigationControllerDelegate, UII
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var rating: UILabel!
     @IBOutlet weak var camera: UIButton!
+    @IBOutlet weak var ratingContainer: UIView!
     
     @IBOutlet weak var locationIcon: UILabel!
     @IBOutlet weak var dateIcon: UILabel!
     @IBOutlet weak var timeIcon: UILabel!
 
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     //before view appears, update the information to represent the event that was clicked
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+//        scrollView.contentSize = CGSizeMake(320, 1700)
         self.title = FGSingleton.sharedInstance.currentEvent.name
         camera.titleLabel?.font = UIFont.fontAwesomeOfSize(25)
         camera.setTitle(String.fontAwesomeIconWithName(.Camera), forState: .Normal)
@@ -40,15 +45,15 @@ class EventViewController: UIViewController, UINavigationControllerDelegate, UII
         
         let ratingNum = FGSingleton.sharedInstance.currentEvent.rating
         if ratingNum == 5 {
-            rating.text = "\(ratingNum) Looks awesome!"
+            rating.text = "\(ratingNum) Awesome!"
         } else if ratingNum >= 4 {
-            rating.text = "\(ratingNum) Looks good!"
+            rating.text = "\(ratingNum) Good!"
         } else if ratingNum >= 3 {
             rating.text = "\(ratingNum) Not bad"
         } else if ratingNum >= 2 {
-            rating.text = "\(ratingNum) Not so hot"
+            rating.text = "\(ratingNum) Meh"
         } else if ratingNum >= 1 {
-            rating.text = "\(ratingNum) Needs some work"
+            rating.text = "\(ratingNum) Umm.."
         } else {
             rating.text = "\(ratingNum) Looks bad"
         }
@@ -63,6 +68,13 @@ class EventViewController: UIViewController, UINavigationControllerDelegate, UII
         dateIcon.text = String.fontAwesomeIconWithName(FontAwesome.Calendar)
         timeIcon.font = UIFont.fontAwesomeOfSize(18)
         timeIcon.text = String.fontAwesomeIconWithName(FontAwesome.ClockO)
+//        rating.layer.cornerRadius = 3
+//        rating.clipsToBounds = true
+//        rating.layer.borderColor = rating.layer.backgroundColor
+//        rating.layer.borderWidth = 5.0
+//        rating.layer.bounds.width += 10
+        ratingContainer.layer.cornerRadius = 3
+        ratingContainer.clipsToBounds = true
     }
     
     var picker: UIImagePickerController! = UIImagePickerController()

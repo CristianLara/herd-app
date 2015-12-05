@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-               BuildableName = "Herd.temp_caseinsensitive_rename.app"
+               BuildableName = "Herd.app"
                BlueprintName = "herd"
                ReferencedContainer = "container:Herd.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-            BuildableName = "Herd.temp_caseinsensitive_rename.app"
+            BuildableName = "Herd.app"
             BlueprintName = "herd"
             ReferencedContainer = "container:Herd.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-            BuildableName = "Herd.temp_caseinsensitive_rename.app"
+            BuildableName = "Herd.app"
             BlueprintName = "herd"
             ReferencedContainer = "container:Herd.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5EA2981BF5DDDD004A607F"
-            BuildableName = "Herd.temp_caseinsensitive_rename.app"
+            BuildableName = "Herd.app"
             BlueprintName = "herd"
             ReferencedContainer = "container:Herd.xcodeproj">
          </BuildableReference>

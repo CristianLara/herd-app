@@ -23,13 +23,14 @@
 		0F8FD0211C093786005A7CC7 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FD01E1C093786005A7CC7 /* FontAwesome.swift */; settings = {ASSET_TAGS = (); }; };
 		0F8FD0251C0C241E005A7CC7 /* Herd Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD0241C0C241E005A7CC7 /* Herd Icon.jpg */; settings = {ASSET_TAGS = (); }; };
 		0F8FD0271C0C2740005A7CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD0261C0C2740005A7CC7 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		0F8FD02A1C0C4C91005A7CC7 /* Herd Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD0291C0C4C91005A7CC7 /* Herd Logo.png */; settings = {ASSET_TAGS = (); }; };
+		0F8FD02F1C0CDFF2005A7CC7 /* Herd Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FD02E1C0CDFF2005A7CC7 /* Herd Logo.jpg */; settings = {ASSET_TAGS = (); }; };
+		0F8FD0311C0EC64B005A7CC7 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FD0301C0EC64B005A7CC7 /* CreateEventViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0FAE552E1BFF0CAB0004529F /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE552D1BFF0CAB0004529F /* splash.png */; settings = {ASSET_TAGS = (); }; };
-		0FAE553E1BFF39960004529F /* herd logo 24X24.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE553D1BFF39960004529F /* herd logo 24X24.png */; settings = {ASSET_TAGS = (); }; };
 		0FAE55401BFF889E0004529F /* mqdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE553F1BFF889D0004529F /* mqdefault.jpg */; settings = {ASSET_TAGS = (); }; };
 		0FAE55421BFF897F0004529F /* winecheese1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55411BFF897F0004529F /* winecheese1.jpg */; settings = {ASSET_TAGS = (); }; };
 		0FAE55441BFF89B90004529F /* volcano-f1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55431BFF89B90004529F /* volcano-f1.jpg */; settings = {ASSET_TAGS = (); }; };
 		0FAE55461BFF89EE0004529F /* mic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE55451BFF89EE0004529F /* mic.jpg */; settings = {ASSET_TAGS = (); }; };
+		0FB085671C0EE49300914575 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB085661C0EE49300914575 /* placeholder.png */; settings = {ASSET_TAGS = (); }; };
 		0FD16ABF1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FD16ABE1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -54,13 +55,14 @@
 		0F8FD0241C0C241E005A7CC7 /* Herd Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Herd Icon.jpg"; sourceTree = "<group>"; };
 		0F8FD0261C0C2740005A7CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/cristianlara/Developer/CS147/high-fidelity/herd/herd/Assets.xcassets"; sourceTree = "<absolute>"; };
 		0F8FD0281C0C3A0E005A7CC7 /* Herd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Herd.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F8FD0291C0C4C91005A7CC7 /* Herd Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Herd Logo.png"; sourceTree = "<group>"; };
+		0F8FD02E1C0CDFF2005A7CC7 /* Herd Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Herd Logo.jpg"; sourceTree = "<group>"; };
+		0F8FD0301C0EC64B005A7CC7 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		0FAE552D1BFF0CAB0004529F /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
-		0FAE553D1BFF39960004529F /* herd logo 24X24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "herd logo 24X24.png"; sourceTree = "<group>"; };
 		0FAE553F1BFF889D0004529F /* mqdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mqdefault.jpg; sourceTree = "<group>"; };
 		0FAE55411BFF897F0004529F /* winecheese1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winecheese1.jpg; sourceTree = "<group>"; };
 		0FAE55431BFF89B90004529F /* volcano-f1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "volcano-f1.jpg"; sourceTree = "<group>"; };
 		0FAE55451BFF89EE0004529F /* mic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mic.jpg; sourceTree = "<group>"; };
+		0FB085661C0EE49300914575 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		0FD16ABE1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tumblr_mb6i7wp8a21r6njsmo1_1280.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				0F5EA29C1BF5DDDD004A607F /* AppDelegate.swift */,
 				0F5EA29E1BF5DDDD004A607F /* ViewController.swift */,
 				0F8FD0141C07F120005A7CC7 /* EventViewController.swift */,
+				0F8FD0301C0EC64B005A7CC7 /* CreateEventViewController.swift */,
 				0F5EA2A01BF5DDDD004A607F /* Main.storyboard */,
 				0FAE552C1BFF0C500004529F /* Supporting Files */,
 				0F8FCFF61C07908F005A7CC7 /* Event.swift */,
@@ -110,26 +113,34 @@
 			path = "/Users/cristianlara/Downloads/SIFloatingCollection_Swift-master/Example/Example/../../Sources";
 			sourceTree = "<absolute>";
 		};
+		0F8FD02B1C0CDCB6005A7CC7 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				0F8FD01B1C093786005A7CC7 /* Enum.swift */,
+				0F8FD01C1C093786005A7CC7 /* FontAwesome.h */,
+				0F8FD01D1C093786005A7CC7 /* FontAwesome.otf */,
+				0F8FD01E1C093786005A7CC7 /* FontAwesome.swift */,
+				0F8FD01A1C093445005A7CC7 /* fontawesome-webfont.ttf */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
 		0FAE552C1BFF0C500004529F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				0F8FCFFD1C0791D4005A7CC7 /* Sources */,
 				0F8FD0261C0C2740005A7CC7 /* Assets.xcassets */,
-				0F8FD01B1C093786005A7CC7 /* Enum.swift */,
-				0F8FD0291C0C4C91005A7CC7 /* Herd Logo.png */,
-				0F8FD01C1C093786005A7CC7 /* FontAwesome.h */,
-				0F8FD01D1C093786005A7CC7 /* FontAwesome.otf */,
-				0F8FD01E1C093786005A7CC7 /* FontAwesome.swift */,
-				0F8FD01A1C093445005A7CC7 /* fontawesome-webfont.ttf */,
+				0F8FD02B1C0CDCB6005A7CC7 /* FontAwesome */,
 				0F8FD0241C0C241E005A7CC7 /* Herd Icon.jpg */,
+				0F8FD02E1C0CDFF2005A7CC7 /* Herd Logo.jpg */,
 				0F5EA2A81BF5DDDD004A607F /* Info.plist */,
 				0FAE552D1BFF0CAB0004529F /* splash.png */,
 				0FAE55451BFF89EE0004529F /* mic.jpg */,
 				0FAE55431BFF89B90004529F /* volcano-f1.jpg */,
+				0FB085661C0EE49300914575 /* placeholder.png */,
 				0FD16ABE1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg */,
 				0FAE55411BFF897F0004529F /* winecheese1.jpg */,
 				0FAE553F1BFF889D0004529F /* mqdefault.jpg */,
-				0FAE553D1BFF39960004529F /* herd logo 24X24.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,14 +206,14 @@
 				0FAE55421BFF897F0004529F /* winecheese1.jpg in Resources */,
 				0F8FD0251C0C241E005A7CC7 /* Herd Icon.jpg in Resources */,
 				0FAE552E1BFF0CAB0004529F /* splash.png in Resources */,
+				0FB085671C0EE49300914575 /* placeholder.png in Resources */,
 				0FAE55461BFF89EE0004529F /* mic.jpg in Resources */,
 				0FAE55441BFF89B90004529F /* volcano-f1.jpg in Resources */,
 				0FD16ABF1BFF8D5200692094 /* tumblr_mb6i7wp8a21r6njsmo1_1280.jpg in Resources */,
 				0F8FD0271C0C2740005A7CC7 /* Assets.xcassets in Resources */,
 				0F5EA2A71BF5DDDD004A607F /* LaunchScreen.storyboard in Resources */,
+				0F8FD02F1C0CDFF2005A7CC7 /* Herd Logo.jpg in Resources */,
 				0F8FD0201C093786005A7CC7 /* FontAwesome.otf in Resources */,
-				0FAE553E1BFF39960004529F /* herd logo 24X24.png in Resources */,
-				0F8FD02A1C0C4C91005A7CC7 /* Herd Logo.png in Resources */,
 				0FAE55401BFF889E0004529F /* mqdefault.jpg in Resources */,
 				0F5EA2A21BF5DDDD004A607F /* Main.storyboard in Resources */,
 			);
@@ -226,6 +237,7 @@
 				0F8FD0151C07F120005A7CC7 /* EventViewController.swift in Sources */,
 				0F5EA29D1BF5DDDD004A607F /* AppDelegate.swift in Sources */,
 				0F8FCFFA1C07908F005A7CC7 /* BubblesScene.swift in Sources */,
+				0F8FD0311C0EC64B005A7CC7 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
