@@ -127,6 +127,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         currentEvents.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!, now: true))
         currentEvents.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!, now: true))
         currentEvents.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("Phi Psi", size: 60.0, location: "Phi Psi", date: "Oct 24, 2015", time: "10pm - 1am", rating: 4.0, image: UIImage(named: "volcano-f1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("Frost", size: 70.0, location: "Amphitheatre", date: "Oct 24, 2015", time: "1pm - 5pm", rating: 5.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Wine&Cheese", size: 40.0, location: "Kairos", date: "Oct 24, 2015", time: "10pm - 1am", rating: 3.0, image: UIImage(named: "winecheese1.jpg")!, now: true))
+        currentEvents.append(Event.instantiate("EBF", size: 50.0, location: "EBF", date: "Oct 24, 2015", time: "10pm - 1am", rating: 2.0, image: UIImage(named: "splash.png")!, now: true))
+        currentEvents.append(Event.instantiate("Karaoke", size: 30.0, location: "Wilbur", date: "Oct 24, 2015", time: "10pm - 1am", rating: 1.0, image: UIImage(named: "mic.jpg")!, now: true))
 //        }
     }
     

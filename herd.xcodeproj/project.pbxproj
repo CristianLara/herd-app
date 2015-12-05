@@ -110,7 +110,7 @@
 				0F8FCFFC1C0791D4005A7CC7 /* SIFloatingNode.swift */,
 			);
 			name = Sources;
-			path = "/Users/cristianlara/Downloads/SIFloatingCollection_Swift-master/Example/Example/../../Sources";
+			path = "/Users/cristianlara/Developer/CS147/high-fidelity/herd/herd/SIFloatingCollection_Swift-master/Sources";
 			sourceTree = "<absolute>";
 		};
 		0F8FD02B1C0CDCB6005A7CC7 /* FontAwesome */ = {
